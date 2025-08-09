@@ -36,7 +36,7 @@
 
     .gradient-text {
       background: linear-gradient(90deg, var(--accent-from), var(--accent-to));
-      /* -webkit-background-clip: text; */
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -674,7 +674,7 @@
     themeToggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
       const isDark = document.documentElement.classList.contains('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
       themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
     });
 
