@@ -620,14 +620,15 @@
 
     <!-- FOOTER -->
     <footer class="py-8 text-center text-sm text-gray-500 dark:text-gray-400">
-      © 2025 Dipeua Berthold — All rights reserved.
+      © <span class="current_year"></span> Dipeua Berthold — All rights reserved.
     </footer>
 
   </main>
 
   <!-- SCRIPTS -->
   <script>
-
+  const currentYear = new Date().getFullYear();
+  document.querySelector('.current_year').textContent = currentYear;
 
     // Scrollspy
     const sections = document.querySelectorAll('main section[id]');
@@ -699,3 +700,4 @@
 </body>
 
 </html>
+
